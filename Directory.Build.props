@@ -1,0 +1,43 @@
+<Project>
+  <!-- Global Build Properties for SentinelaOps Solution -->
+  
+  <!-- Framework and Language Settings -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+
+  <!-- Version Information -->
+  <PropertyGroup>
+    <Version>0.1.0</Version>
+    <Authors>SentinelaOps Team</Authors>
+    <Company>SentinelaOps</Company>
+    <Description>Sentinela Ops - Video Monitoring Decision Support Platform with AI-Driven Analysis</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <!-- Documentation and Source Control -->
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
+  <!-- NuGet Package Defaults -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <!-- Common Package References -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+  </ItemGroup>
+
+  <!-- Test Project Configuration Note: Test packages are managed per project .csproj to avoid duplicates with xunit template -->
+
+</Project>
