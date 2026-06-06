@@ -1,0 +1,3 @@
+- docker compose up -d
+- docker exec -it ollama ollama pull gemma3:4b
+- docker exec -it ollama ollama list
